@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+
+<script>
+
+    // função pula duas linhas e cria uma linha divisória;
+    function pulaLinha() {
+        document.write("<br><hr><br>");
+    }
+
+    // Mostra o resultado e chama a função anterior;
+    function mostra(frase) {
+        document.write("<big>" +frase+ "</big>");
+        pulaLinha();
+    }
+
+    //Mostra só os resultados da tabuada;
+    for(var multiplicador = 1; multiplicador <= 10; multiplicador ++){
+          mostra(7 * multiplicador);
+    }
+
+</script>

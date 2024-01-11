@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<script>
+    
+    //função para mostrar 
+    function Mostra(texto){
+        document.write(texto);
+        PulaUmaLinha();
+    }
+
+    //função para pular apenas uma linha
+    function PulaUmaLinha(){
+        document.write("<br><br>");
+    }
+
+    var anoCopa = 1930;
+    var contador = 1;
+
+    //condição de repetição para repetir todos os anos de copa;
+    while(anoCopa <= 2022){
+        Mostra("Teve copa em: " + anoCopa + " Foi a " +contador+ " copa");
+        anoCopa = anoCopa + 4;
+        contador = contador + 1;
+    }
+
+</script>

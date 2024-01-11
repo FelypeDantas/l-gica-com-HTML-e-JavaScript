@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+
+<script>
+
+    //função pula linha única
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    //função mostra resultado e chama a função anterior;
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    //Função retorna dois parenteses e uma variavel texto sendo todos como algo único; 
+    function a(texto) {
+
+        return "(" + texto + ")";
+    }
+
+    //função retorna uma váriavel texto e dois simbolos "@";
+    function b(texto) {
+
+        return "@" + texto + "@";
+    }
+
+    // função define o primero texto chamando a função b e o segundo texto chamando a função a;
+    function c(nome, sobrenome) {
+
+        return b(nome + " " + a(sobrenome));
+
+    }
+
+    // o resultado chama a função c e passa parâmetros texto;
+    var resultado = c("Flávio", "Almeida");
+
+    //mostra o resultado final que com o envio de parametro ficou @Flávio@(Almeida)
+    mostra(resultado);
+
+</script>

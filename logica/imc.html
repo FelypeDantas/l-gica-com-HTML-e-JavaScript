@@ -1,0 +1,45 @@
+<meta charset="UTF-8">
+
+<script>
+
+    //função para mostrar que chama a de pular uma linha de forma direta;
+    function Mostra(texto){
+        document.write(texto);
+        PulaUmaLinha();
+    }
+
+    //função que pula uma linha... na verdade pula duas aqui;
+    function PulaUmaLinha(){
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    //função que calcula o IMC e Mostra diretamente chamando a função "Mostra";
+    function CalcularIMC(alturaFelype, PesoFelype, nome){
+        var imcFelype = PesoFelype / (alturaFelype * alturaFelype);
+        Mostra("IMC do " + nome + " é: " + imcFelype);
+    }
+    
+    //Declaração de variáveis usadas no calculo e prompt para captura de valores;
+    var nome = prompt("Informe o seu nome: ");
+    var PesoFelype = prompt("Informe o seu peso: ");
+    var alturaFelype = prompt("Informe a sua altura: ");
+     
+    //Chamada de Função;
+    var imc = CalcularIMC(alturaFelype, PesoFelype, nome);
+
+    //verificações para saber a sua situação;
+    if(imc < 18.5){
+         Mostra("Você está abaixo do peso!");
+    }
+
+    else if(imc > 35){
+        Mostra("Você está muito acima do peso!");
+    }
+
+    else{
+        Mostra("Você está na média");
+    }
+
+</script>
+

@@ -1,0 +1,38 @@
+<meta chaset = "UTF-8">
+
+<script>
+    //função para mostrar que chama a de pular uma linha de forma direta;
+    function Mostra(texto){
+        document.write(texto);
+        PulaUmaLinha();
+    }
+
+    //função que pula uma linha... na verdade pula duas aqui;
+    function PulaUmaLinha(){
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    //captura de valores para variáveis recém declaradas;
+    var vitorias = parseInt(prompt("Entre com as vitórias: "));
+    var empates = parseInt(prompt("Entre com os empates: "));
+
+    //prompt sempre retorna texto, preciso do parseInt acima;
+    var pontos = (vitorias * 3) + empates;
+
+    Mostra("O total de pontos do seu time é: " + pontos);
+
+    if(pontos > 28){
+        PulaUmaLinha();
+        Mostra("O seu time está melhor do que o ano passado!");
+    }
+
+    else if(pontos < 28){
+        Mostra("O seu time está pior do que o ano passado!");
+    }
+
+    else{
+        Mostra("O seu time está igual ao ano passado");
+    }
+
+</script>

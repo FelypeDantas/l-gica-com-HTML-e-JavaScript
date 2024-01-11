@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+
+<script>
+
+    //Função para não precisar colocar document.write("<br>") o tempo todo, e deixa mais fácil de entender
+    function PulaLinha(){
+        document.write("<br>");
+    }
+
+    //função para calcular a Idade, enviando o parametro de data de nascimento
+    function CalcularIdade(nasc){
+         document.write("A idade atual é: " + (2024 - nasc) + " Anos");
+    }
+
+    //declaração de variável e captura de valor com prompt;
+    var nasc = prompt("Digite o ano em que nasceu:" );
+
+    //chamada de funções
+    PulaLinha();
+    CalcularIdade(nasc);
+</script>

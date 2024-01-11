@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+<script>
+
+    // função pula duas linhas e cria uma linha divisória;
+    function pulaLinha() {
+        document.write("<br><hr><br>");
+    }
+
+    // Mostra o resultado e chama a função anterior;
+    function mostra(frase) {
+        document.write("<big>" +frase+ "</big>");
+        pulaLinha();
+    }
+
+    //declara variável ano como 2019;
+    var ano = 2019;
+
+    //Mostra a idade de Sujeitos;
+    mostra("Eu nasci em : " + (ano - 25));
+    mostra("Adriano nasceu em : " + (ano - 26));
+    mostra("Paulo nasceu em : " + (ano - 32));
+</script>

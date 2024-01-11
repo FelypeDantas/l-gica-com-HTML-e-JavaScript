@@ -1,0 +1,53 @@
+<meta charset="UTF-8">
+
+<script>
+    
+    //função para mostrar 
+    function Mostra(texto){
+        document.write(texto);
+    }
+
+    //função para pular apenas uma linha
+    function PulaUmaLinha(){
+        document.write("<br>");
+    }
+
+    //função para pular duas linhas
+    function PulaDuasLinhas(){
+        document.write("<br><br>");
+    }
+
+    //declaração da variável ano
+    var ano = 2023;
+
+    //chamada da função mostra para exibir a mensagem;
+    Mostra("O ano de nascimento do Felype é " + (ano - 20 ));
+    PulaUmaLinha();
+    Mostra("A idade dele é: " + (ano - 2003) + " Anos");
+
+    //reescrevendo o valor da variável ano de 2023 para 2024;
+    ano = 2024;
+
+    //pulando duas linhas e exibindo a idade de gabriel;
+    PulaDuasLinhas();
+    Mostra("Gabriel tem: " + (ano - 1995));
+    PulaDuasLinhas();
+
+    //escrevendo os resultados anteriores e mais um extra para fazer média
+    var idadeFelype = 20;
+    var idadeGabriel = 29;
+    var idadeByanca = 20;
+
+    // média = (20 + 29 + 20) / 3;
+    var media = (idadeFelype + idadeGabriel + idadeByanca) / 3;
+
+    //Exibindo a média e usando Math.round(variável) para arredondar valor;
+    Mostra("A média das idades é: " + Math.round(media));
+
+    // Declarando variável Byanca
+    var nome = "Byanca";
+
+    //Pulando uma linha e descobrindo a única idade não printada até o momento;
+    PulaUmaLinhas();
+    Mostra("A idade de " + nome + " é de " + idadeByanca);
+</script>

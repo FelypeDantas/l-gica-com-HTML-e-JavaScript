@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>Compare com o meu segredo </button>
+
+<script>
+    
+    var segredos = Math.round(Math.random() * 10);
+
+    //captura do valor de input do mundo HTML;
+    var input = document.querySelector("input");
+    // dá foco inicial ao input;
+    input.focus();
+
+    function verifica(){
+
+        //Verificação de valor de input;
+        if(input.value == segredos){
+
+            alert("Você ACERTOU!");
+
+        }
+
+        else{
+
+            alert("você ERROU!");
+
+        }
+
+        //limpa a caixa e dá foco a ela para o cursor iniciar dentro;
+        input.value = "";
+        input.focus();
+
+    }
+
+        //Captura do valor de button do mundo HTML;
+        var button = document.querySelector("button");
+
+       //ação de botão ao clicar chamar função verifica;
+       button.onclick = verifica;
+
+</script>
